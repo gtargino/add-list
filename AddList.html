@@ -1,43 +1,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Add List - Challenge 2 RocketSeat</title>
+        <title>Add List - Challenge RocketSeat</title>
         <link rel="stylesheet" href="challenge.css">
     </head>
-    
+
     <body>
         <div id='idk'>
             <input type="text" name="nameAdd">
             <button onClick="addName()">Add</button>
         </div>
-        <script>
-            var containerBElement = document.querySelector('#idk');
-            var nomes = [];
-
-            function addName() {
-                var inputElement = document.querySelector('div#idk input[name = nameAdd]');
-                nomes.push(inputElement.value);
-
-                var textElement = document.createTextNode(inputElement.value);
-                
-                var liElement = document.createElement('li');
-                liElement.appendChild(textElement);
-                containerBElement.appendChild(liElement);
-
-                inputElement.value = '';
-            }
-
-            function createAndShowNames() {
-                var liElement;
-                for (let value of nomes) {
-                    let textElement = document.createTextNode(value);
-
-                    liElement = document.createElement('li');
-                    liElement.appendChild(textElement);
-                    containerBElement.appendChild(liElement);
-                }
-            }
-            //createAndShowNames();
-        </script>
     </body>
+
+    <footer>
+        <script src="whereMagicHappens.js"></script>
+    </footer>
 </html>
