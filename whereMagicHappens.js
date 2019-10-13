@@ -14,7 +14,7 @@ function addName() {
     inputElement.value = '';
 }
 
-function createAndShowNames() {
+/*function createAndShowNames() {
     var liElement;
     for (let value of nomes) {
         let textElement = document.createTextNode(value);
@@ -24,4 +24,7 @@ function createAndShowNames() {
         containerBElement.appendChild(liElement);
     }
 }
-// createAndShowNames();
+createAndShowNames();
+*/
+
+
