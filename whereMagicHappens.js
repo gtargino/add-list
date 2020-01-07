@@ -1,4 +1,4 @@
-var containerBElement = document.querySelector('#idk');
+var containerElement = document.querySelector('#idk');
 var nomes = [];
 
 function addName() {
@@ -9,7 +9,7 @@ function addName() {
     
     var liElement = document.createElement('li');
     liElement.appendChild(textElement);
-    containerBElement.appendChild(liElement);
+    containerElement.appendChild(liElement);
 
     inputElement.value = '';
 }
@@ -21,7 +21,7 @@ function addName() {
 
         liElement = document.createElement('li');
         liElement.appendChild(textElement);
-        containerBElement.appendChild(liElement);
+        containerElement.appendChild(liElement);
     }
 }
 createAndShowNames();
